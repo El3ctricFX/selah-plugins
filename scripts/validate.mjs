@@ -39,7 +39,12 @@ for (const name of names) {
     if (!REPO_RE.test(e.repo || "")) fail(file, "repo must be owner/name");
     if (!SHA_RE.test(e.commit || "")) fail(file, "commit must be a full 40-char SHA (not a branch or tag)");
     if (!e.files || typeof e.files !== "object") { fail(file, "files is required"); continue; }
-    if (!e.files["manifest.json"] || !e.files["index.js"]) fail(file, "files must include manifest.json and index.js");
+
+    // Allow manifest.json and index.js to be inside subfolders
+    const filePaths = Object.keys(e.files);
+    if (!filePaths.some(p => p.endsWith("manifest.json")) || !filePaths.some(p => p.endsWith("index.js"))) {
+        fail(file, "files must include manifest.json and index.js");
+    }
     if (failed && (!REPO_RE.test(e.repo) || !SHA_RE.test(e.commit))) continue;
 
     for (const [path, expected] of Object.entries(e.files)) {
@@ -53,7 +58,7 @@ for (const name of names) {
         const actual = createHash("sha256").update(buf).digest("hex");
         if (actual !== expected) { fail(file, `Hash mismatch for ${path}: expected ${expected}, got ${actual}`); continue; }
 
-        if (path === "manifest.json") {
+        if (path.endsWith("manifest.json")) {
             try {
                 const m = JSON.parse(buf.toString("utf8"));
                 if (String(m.id) !== e.id) fail(file, `manifest.json id "${m.id}" != "${e.id}"`);

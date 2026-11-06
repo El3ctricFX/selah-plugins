@@ -1,0 +1,15 @@
+{
+  "id": "daily-stats",
+  "name": "Daily Stats",
+  "description": "Track daily metrics directly inside your notes.",
+  "author": "El3ctricFX",
+  "repo": "El3ctricFX/MyPlugins",
+  "commit": "a49196808dfb80b9371775a6c7e19036f6048a82",
+  "version": "1.0.0",
+  "icon": "📊",
+  "permissions": [],
+  "files": {
+    "daily-stats/manifest.json": "f8f1b01202ab7004d05d092af9a4780f6ec432b91e371f48908aa43a667fc175",
+    "daily-stats/index.js": "99076cdb7253ee36762d7900510b0a3e4ed7c65cd642d22af72b24a7114077ed"
+  }
+}
