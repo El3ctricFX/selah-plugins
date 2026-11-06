@@ -1,0 +1,26 @@
+name: Build registry
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/validate.mjs
+      - run: node scripts/build.mjs
+      - name: Publish to registry branch
+        run: |
+          mkdir out && cp registry.json out/
+          cd out
+          git init -b registry
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add registry.json
+          git commit -m "Build registry"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" registry

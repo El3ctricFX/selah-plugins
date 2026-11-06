@@ -1,0 +1,15 @@
+{
+  "id": "flowtide",
+  "name": "Flowtide",
+  "description": "Focus & Hide Tasks workspace.",
+  "author": "El3ctricFX",
+  "repo": "El3ctricFX/selah-flowtide",
+  "commit": "d9f7de73c2ad816ae1c2338bd7233e9318796d47",
+  "version": "1.0.0",
+  "icon": "🧩",
+  "permissions": [],
+  "files": {
+    "manifest.json": "958c3d77500fad4ab51276f94630d355615eef086a063e24697c1fbba2a37b2a",
+    "index.js": "5795d5bc34395bbc6550bae097b3e2e4ea3dd305b44c394f68c50cfdac072ad0"
+  }
+}
