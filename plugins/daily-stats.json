@@ -4,12 +4,12 @@
   "description": "Track daily metrics directly inside your notes.",
   "author": "El3ctricFX",
   "repo": "El3ctricFX/MyPlugins",
-  "commit": "9f86cbedbca20eedacbe7d2fea7cf62f270bc785",
+  "commit": "a68db23c04d2e1a535fe94615618e2b439bad897",
   "version": "1.0.0",
   "icon": "📊",
   "permissions": [],
   "files": {
     "daily-stats/manifest.json": "f8f1b01202ab7004d05d092af9a4780f6ec432b91e371f48908aa43a667fc175",
-    "daily-stats/index.js": "afcd12a07348cdac0799648abfabfb44b88af034db039230a4cf7ba1aa30179d"
+    "daily-stats/index.js": "e7813ce148be9f64f5fe490a2aaf3f9de2f6897eb955ea7358daa1d8887fcead"
   }
 }
