@@ -2,15 +2,19 @@
 <p>This repository is the official registry for Selah community plugins. </p>
 
 <h2>📥 How to Install a Plugin</h2>
-<p>The easiest way to install plugins is directly inside Selah:</p>
+<p>The safest and easiest way to install plugins is directly inside Selah:</p>
 <ol>
   <li>Open Selah and go to <strong>Settings &gt; Plugins</strong>.</li>
   <li>Click <strong>Browse Community Plugins</strong>.</li>
   <li>Find a plugin and click <strong>Install</strong>. Selah handles the download and verification automatically.</li>
 </ol>
 
+<p><strong>Manual Installation:</strong> If a plugin is not in the registry yet, you can download it directly from the developer's GitHub. Extract the folder, then click the <strong>Import Plugin</strong> button in Selah's Settings menu to install it.</p>
+
+<hr>
+
 <h2>🛠️ Submitting a Plugin</h2>
-<p>We use a strict, commit-pinned, hash-verified registry to keep users safe.</p>
+<p>We use a strict, commit-pinned, hash-verified registry to keep users safe. If you have built a plugin and want it listed in the Community tab, follow these steps:</p>
 <ol>
   <li><strong>Publish your plugin</strong> in a public GitHub repo. It can be a dedicated repo, or a folder inside a monorepo (e.g., <code>my-plugins/daily-stats</code>).</li>
   <li><strong>Get the commit SHA</strong> you want to publish: 
@@ -29,4 +33,4 @@
 </ol>
 
 <h2>📚 Documentation</h2>
-<p>For detailed guides on the Plugin API, creating custom blocks, and UI styling, please read the <strong><a href="https://github.com/El3ctricFX/selah-plugins/wiki">Selah Plugin Wiki</a></strong>.</p>
+<p>For detailed guides on the Plugin API, creating custom blocks, and UI styling, please read the <strong><a href="https://github.com/El3ctricFX/selah-plugins/wiki/API-Reference">Selah Plugin Wiki</a></strong>.</p>
