@@ -1,14 +1,32 @@
-## Submitting a plugin
-1. Publish your plugin in your own public GitHub repo (`manifest.json` + `index.js` at the root).
-2. Note the exact commit you want published: `git rev-parse HEAD`
-3. Fork this repo and run:
-   `node scripts/hash.mjs yourname/your-plugin <commit-sha>`
-4. Save the output as `plugins/<id>.json`.
-5. Open a pull request. CI re-downloads your files and checks the hashes.
-6. A maintainer reviews your code. Once merged, it shows up in Selah within minutes.
+<h1>Selah Plugin Registry</h1>
+<p>This repository is the official registry for Selah community plugins. </p>
 
-## Updating a plugin
-Push your changes, then open a PR editing your `plugins/<id>.json` with the new commit,
-version and hashes. Users are never moved to new code without a reviewed PR.
+<h2>📥 How to Install a Plugin</h2>
+<p>The easiest way to install plugins is directly inside Selah:</p>
+<ol>
+  <li>Open Selah and go to <strong>Settings &gt; Plugins</strong>.</li>
+  <li>Click <strong>Browse Community Plugins</strong>.</li>
+  <li>Find a plugin and click <strong>Install</strong>. Selah handles the download and verification automatically.</li>
+</ol>
 
-node scripts/hash.mjs El3ctricFX/selah-flowtide d9f7de73c2ad816ae1c2338bd7233e9318796d47
+<h2>🛠️ Submitting a Plugin</h2>
+<p>We use a strict, commit-pinned, hash-verified registry to keep users safe.</p>
+<ol>
+  <li><strong>Publish your plugin</strong> in a public GitHub repo. It can be a dedicated repo, or a folder inside a monorepo (e.g., <code>my-plugins/daily-stats</code>).</li>
+  <li><strong>Get the commit SHA</strong> you want to publish: 
+    <pre><code class="language-bash">git rev-parse HEAD</code></pre>
+  </li>
+  <li><strong>Fork this repo</strong> and run the hash script. 
+    <ul>
+      <li>For a dedicated repo: <code>node scripts/hash.mjs owner/repo &lt;commit-sha&gt;</code></li>
+      <li>For a monorepo folder: <code>node scripts/hash.mjs owner/repo &lt;commit-sha&gt; &lt;folder-name&gt;</code></li>
+    </ul>
+  </li>
+  <li>Save the output as <code>plugins/&lt;your-plugin-id&gt;.json</code>.</li>
+  <li>Open a Pull Request. </li>
+  <li>Our CI will automatically download your files at that exact commit, verify the hashes, and check for malicious code. </li>
+  <li>Once a maintainer merges the PR, it will appear in Selah within minutes.</li>
+</ol>
+
+<h2>📚 Documentation</h2>
+<p>For detailed guides on the Plugin API, creating custom blocks, and UI styling, please read the <strong><a href="https://github.com/El3ctricFX/selah-plugins/wiki">Selah Plugin Wiki</a></strong>.</p>
