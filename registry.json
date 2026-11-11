@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "generated": "2026-11-11T06:51:12.650Z",
+  "plugins": [
+    {
+      "id": "daily-stats",
+      "name": "Daily Stats",
+      "description": "Track daily metrics directly inside your notes.",
+      "author": "El3ctricFX",
+      "repo": "El3ctricFX/MyPlugins",
+      "commit": "a68db23c04d2e1a535fe94615618e2b439bad897",
+      "version": "1.0.0",
+      "icon": "📊",
+      "permissions": [],
+      "files": {
+        "daily-stats/manifest.json": "f8f1b01202ab7004d05d092af9a4780f6ec432b91e371f48908aa43a667fc175",
+        "daily-stats/index.js": "e7813ce148be9f64f5fe490a2aaf3f9de2f6897eb955ea7358daa1d8887fcead"
+      }
+    },
+    {
+      "id": "excalidraw",
+      "name": "Excalidraw",
+      "description": "Sketch, diagram, and visualize ideas directly inside your Selah notes with the full power of Excalidraw.",
+      "author": "Selah Community",
+      "repo": "El3ctricFX/MyPlugins",
+      "commit": "40f1e2879ddb33d7f14052020443f05486258f71",
+      "version": "1.0.0",
+      "icon": "✏️",
+      "permissions": [],
+      "files": {
+        "excalidraw/manifest.json": "2ea4c9d494b9914e8af898fafb837b4cc677619bb6e7d13d3b7b9512f892f916",
+        "excalidraw/index.js": "84f212a1ab8203b855a07e977c36f6446b8fd7d78cf08ab9579cadbbc1d3a7ff"
+      }
+    },
+    {
+      "id": "flowtide",
+      "name": "Flowtide",
+      "description": "Focus & Hide Tasks workspace.",
+      "author": "El3ctricFX",
+      "repo": "El3ctricFX/MyPlugins",
+      "commit": "a49196808dfb80b9371775a6c7e19036f6048a82",
+      "version": "1.0.0",
+      "icon": "🌸",
+      "permissions": [],
+      "files": {
+        "flowtide/manifest.json": "b9f833e71305232d8cd130dfc8efcf9c28a3d499dad5b09259d90411bde9c911",
+        "flowtide/index.js": "5795d5bc34395bbc6550bae097b3e2e4ea3dd305b44c394f68c50cfdac072ad0"
+      }
+    },
+    {
+      "id": "prompted-journal",
+      "name": "Prompted Journal",
+      "description": "Journal with prompts, questions, and free-form writing.",
+      "author": "You",
+      "repo": "El3ctricFX/MyPlugins",
+      "commit": "f9e70023c3fc9b696e7446abf8df854e1dcd73a7",
+      "version": "1.0.0",
+      "icon": "✍️",
+      "permissions": [
+        "vault:read",
+        "vault:write"
+      ],
+      "files": {
+        "prompts/manifest.json": "e1a91ec93138e1880151762333eb7fd0545a372c23337b55cd0319ee7da10327",
+        "prompts/index.js": "abb27afd8cd6ce39608f7ddd838fe7c98728feb47981a7199808f07867e1f498"
+      }
+    }
+  ]
+}
