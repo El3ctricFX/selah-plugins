@@ -1,15 +1,15 @@
 {
-  "id": "excalidraw-plugin",
+  "id": "excalidraw",
   "name": "Excalidraw",
   "description": "Sketch, diagram, and visualize ideas directly inside your Selah notes with the full power of Excalidraw.",
   "author": "Selah Community",
   "repo": "El3ctricFX/MyPlugins",
-  "commit": "74b367269863d9ecf6cca7701863f346617197ca",
+  "commit": "40f1e2879ddb33d7f14052020443f05486258f71",
   "version": "1.0.0",
   "icon": "✏️",
   "permissions": [],
   "files": {
-    "excalidraw/manifest.json": "10a9b3339a213bb64e371d8d16f5a3a9bb0e9e51a9698ab5aa9d274c5e073cb7",
+    "excalidraw/manifest.json": "2ea4c9d494b9914e8af898fafb837b4cc677619bb6e7d13d3b7b9512f892f916",
     "excalidraw/index.js": "84f212a1ab8203b855a07e977c36f6446b8fd7d78cf08ab9579cadbbc1d3a7ff"
   }
 }
