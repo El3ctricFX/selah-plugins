@@ -1,0 +1,18 @@
+{
+  "id": "prompted-journal",
+  "name": "Prompted Journal",
+  "description": "Journal with prompts, questions, and free-form writing.",
+  "author": "You",
+  "repo": "El3ctricFX/MyPlugins",
+  "commit": "f9e70023c3fc9b696e7446abf8df854e1dcd73a7",
+  "version": "1.0.0",
+  "icon": "✍️",
+  "permissions": [
+    "vault:read",
+    "vault:write"
+  ],
+  "files": {
+    "prompts/manifest.json": "e1a91ec93138e1880151762333eb7fd0545a372c23337b55cd0319ee7da10327",
+    "prompts/index.js": "abb27afd8cd6ce39608f7ddd838fe7c98728feb47981a7199808f07867e1f498"
+  }
+}
